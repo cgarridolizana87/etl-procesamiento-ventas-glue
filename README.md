@@ -1,4 +1,3 @@
-```markdown
 # 🚀 ETL Sales Pipeline with AWS Glue 5.0
 
 | Language | Idioma |
