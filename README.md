@@ -1,5 +1,3 @@
-¡Claro que sí, Cristobal! Acá tenés el archivo `README.md` bilingüe, limpio y completo, listo para pegar en tu repositorio:
-
 ```markdown
 # 🚀 ETL Sales Pipeline with AWS Glue 5.0
 
