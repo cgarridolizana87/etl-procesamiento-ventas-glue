@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Glue Job local
+output/
+.glue/
+
+# Archivos de sistema / editores
+.DS_Store
+.idea/
+.vscode/

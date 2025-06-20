@@ -2,11 +2,13 @@
 
 | Language | Idioma |
 |----------|--------|
-| 🇺🇸 English | [Español](#-pipeline-de-procesamiento-de-ventas-con-aws-glue-50) |
+| 🇺🇸 English | [Español](#-pipeline-de-procesamiento-de-ventas-con-aws-glue-50)
 
 ---
 
 This project implements an AWS Glue 5.0 ETL job to transform raw sales data stored as CSV files in S3 into clean, structured Parquet files. It applies safe type casting, validation, and the calculation of a derived metric (`total_venta`). Designed as a foundational component for modern analytics pipelines.
+
+📄 License: [MIT](LICENSE) — open to use and learn from. See [LICENSE-español.txt](LICENSE-español.txt) for a Spanish translation.
 
 ## 🧱 Stack
 
@@ -28,7 +30,7 @@ This project implements an AWS Glue 5.0 ETL job to transform raw sales data stor
 
 ## 🧭 Architecture Diagram
 
-The diagram below illustrates the ETL pipeline implemented using AWS Glue 5.0. It begins with raw CSV ingestion from an Amazon S3 bucket, applies typed transformations and the calculation of a derived business metric (`total_venta`), and outputs the result in Parquet format to a processed S3 location. Future integrations include Redshift, Athena, and Power BI for analytical exploration.
+The diagram below illustrates the ETL pipeline implemented using AWS Glue 5.0. It begins with raw CSV ingestion from an Amazon S3 bucket, applies typed transformations and the calculation of a derived business metric (`total_venta`), and outputs the result in Parquet format to a processed S3 location. Future integrations include Redshift, Athena, and Power BI.
 
 ![ETL Architecture](docs/etl_ventas_architecture.png)
 
@@ -54,13 +56,15 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 
 Este proyecto implementa un Job de Glue 5.0 que transforma datos crudos de ventas (en formato CSV en S3) en archivos Parquet estructurados y limpios. Aplica casteo seguro de tipos, validación, cálculo de la métrica derivada `total_venta`, y está preparado para integrarse a un pipeline analítico moderno.
 
+📄 Licencia: [MIT](LICENSE) — uso libre con fines educativos y profesionales. Ver [LICENSE-español.txt](LICENSE-español.txt) para una traducción referencial.
+
 ## 🧱 Tecnologías
 
 - AWS Glue 5.0 (Spark 3.5, Python 3.11)
 - Amazon S3
 - PySpark
 - Parquet optimizado
-- Compatible con Lambda, Airflow y Redshift
+- Compatible con Lambda, Airflow, Redshift
 
 ## ⚙️ Lógica del ETL
 
@@ -74,7 +78,7 @@ Este proyecto implementa un Job de Glue 5.0 que transforma datos crudos de venta
 
 ## 🧭 Diagrama de Arquitectura
 
-El siguiente diagrama representa el pipeline ETL desarrollado con AWS Glue 5.0. Inicia con la ingesta de archivos CSV crudos desde un bucket de Amazon S3, aplica transformaciones tipadas y el cálculo de la métrica de negocio `total_venta`, y entrega los resultados en formato Parquet en la zona procesada de S3. Se contemplan futuras integraciones con Redshift, Athena y Power BI para análisis avanzados.
+El siguiente diagrama representa el pipeline ETL desarrollado con AWS Glue 5.0. Inicia con la ingesta de archivos CSV crudos desde un bucket de Amazon S3, aplica transformaciones tipadas y el cálculo de la métrica de negocio `total_venta`, y entrega los resultados en formato Parquet en la zona procesada de S3. Se contemplan futuras integraciones con Redshift, Athena y Power BI.
 
 ![Diagrama ETL Glue](docs/etl_ventas_architecture.png)
 
@@ -93,4 +97,3 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 - Orquestación con Apache Airflow  
 - Carga a Redshift para análisis  
 - Visualización con Power BI o QuickSight
-
