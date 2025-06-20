@@ -26,6 +26,12 @@ This project implements an AWS Glue 5.0 ETL job to transform raw sales data stor
   - Filter invalid rows
 - **Output**: `s3://data-cgarridolizana/processed/ventas/` as Parquet
 
+## 🧭 Architecture Diagram
+
+The diagram below illustrates the ETL pipeline implemented using AWS Glue 5.0. It begins with raw CSV ingestion from an Amazon S3 bucket, applies typed transformations and the calculation of a derived business metric (`total_venta`), and outputs the result in Parquet format to a processed S3 location. Future integrations include Redshift, Athena, and Power BI for analytical exploration.
+
+![ETL Architecture](docs/etl_ventas_architecture.png)
+
 ## 📌 Sample Code
 
 ```python
@@ -66,6 +72,12 @@ Este proyecto implementa un Job de Glue 5.0 que transforma datos crudos de venta
   - Filtro de registros inválidos
 - **Salida**: `s3://data-cgarridolizana/processed/ventas/` en Parquet
 
+## 🧭 Diagrama de Arquitectura
+
+El siguiente diagrama representa el pipeline ETL desarrollado con AWS Glue 5.0. Inicia con la ingesta de archivos CSV crudos desde un bucket de Amazon S3, aplica transformaciones tipadas y el cálculo de la métrica de negocio `total_venta`, y entrega los resultados en formato Parquet en la zona procesada de S3. Se contemplan futuras integraciones con Redshift, Athena y Power BI para análisis avanzados.
+
+![Diagrama ETL Glue](docs/etl_ventas_architecture.png)
+
 ## 📌 Fragmento de Código
 
 ```python
@@ -82,8 +94,3 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 - Carga a Redshift para análisis  
 - Visualización con Power BI o QuickSight
 
-
-## 🧭 Architecture Diagram
-
-![ETL Architecture](docs/etl_ventas_architecture.png)
- ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​   ​
