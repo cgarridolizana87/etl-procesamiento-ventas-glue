@@ -50,6 +50,11 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 - Load into Amazon Redshift
 - Visualize with Power BI or QuickSight
 
+## 📚 Additional Documentation
+
+- [Technical Notes (EN)](docs/technical_notes.md) / [Notas Técnicas (ES)](docs/notas_tecnicas.md)
+- [Future Integrations (EN)](docs/future_integrations.md) / [Futuras Integraciones (ES)](docs/futuras_integraciones.md)
+
 ---
 
 ## 🇪🇸 Pipeline de Procesamiento de Ventas con AWS Glue 5.0
@@ -64,7 +69,7 @@ Este proyecto implementa un Job de Glue 5.0 que transforma datos crudos de venta
 - Amazon S3
 - PySpark
 - Parquet optimizado
-- Compatible con Lambda, Airflow, Redshift
+- Compatible con Lambda, Airflow y Redshift
 
 ## ⚙️ Lógica del ETL
 
@@ -97,3 +102,12 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 - Orquestación con Apache Airflow  
 - Carga a Redshift para análisis  
 - Visualización con Power BI o QuickSight
+
+## 📚 Documentación Adicional
+
+- [Notas Técnicas (ES)](docs/notas_tecnicas.md) / [Technical Notes (EN)](docs/technical_notes.md)
+- [Futuras Integraciones (ES)](docs/futuras_integraciones.md) / [Future Integrations (EN)](docs/future_integrations.md)
+
+---
+
+👨‍💻 Created by [Cristobal Garrido](https://github.com/cgarridolizana87) — AWS Data Engineer
