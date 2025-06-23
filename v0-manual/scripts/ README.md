@@ -83,6 +83,6 @@ v0-manual/
 
 ## 🧭 Evolución
 
-Este flujo fue reemplazado por [`v1-lambda`](../v1-lambda/), donde una función AWS Lambda dispara automáticamente el Glue Job al detectar archivos..
+Este flujo fue reemplazado por [`v1-lambda`](../v1-lambda/), donde una función AWS Lambda dispara automáticamente el Glue Job al detectar archivos.
 
 </details>
