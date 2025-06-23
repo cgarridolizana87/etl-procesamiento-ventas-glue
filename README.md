@@ -8,7 +8,7 @@
 
 This project implements an AWS Glue 5.0 ETL job to transform raw sales data stored as CSV files in S3 into clean, structured Parquet files. It applies safe type casting, validation, and the calculation of a derived metric (`total_venta`). Designed as a foundational component for modern analytics pipelines.
 
-📄 License: [MIT](LICENSE) — open to use and learn from. See [LICENSE-español.txt](LICENSE-español.txt) for a Spanish translation.
+📄 License: [MIT](LICENSE) — open to use and learn from. See [LICENSE_SPANISH.txt](LICENSE_SPANISH.txt) for a Spanish translation.
 
 ## 🧱 Stack
 
@@ -61,7 +61,7 @@ df_clean.write.mode("overwrite").parquet("s3://.../processed/ventas/")
 
 Este proyecto implementa un Job de Glue 5.0 que transforma datos crudos de ventas (en formato CSV en S3) en archivos Parquet estructurados y limpios. Aplica casteo seguro de tipos, validación, cálculo de la métrica derivada `total_venta`, y está preparado para integrarse a un pipeline analítico moderno.
 
-📄 Licencia: [MIT](LICENSE) — uso libre con fines educativos y profesionales. Ver [LICENSE-español.txt](LICENSE-español.txt) para una traducción referencial.
+📄 Licencia: [MIT](LICENSE) — uso libre con fines educativos y profesionales. Ver [LICENSE_SPANISH.txt](LICENSE_SPANISH.txt) para una traducción referencial.
 
 ## 🧱 Tecnologías
 
