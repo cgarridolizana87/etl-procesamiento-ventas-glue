@@ -94,3 +94,7 @@ La captura muestra detección del archivo, inicio del Glue Job y datos como dura
 - Próximo paso: orquestación declarativa en [`v2-airflow`](../v2-airflow/)
 
 </details>
+
+**AWS Data Engineer**  
+AWS Certified (3x): Cloud Practitioner, AI Practitioner, Solutions Architect Associate  
+Python | AWS Glue | Lambda | Serverless ETL & Event-Driven Workflows
