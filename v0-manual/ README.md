@@ -86,3 +86,7 @@ v0-manual/
 Este flujo fue reemplazado por [`v1-lambda`](../v1-lambda/), donde una función AWS Lambda dispara automáticamente el Glue Job al detectar archivos.
 
 </details>
+
+**AWS Data Engineer**  
+AWS Certified (3x): Cloud Practitioner, AI Practitioner, Solutions Architect Associate  
+Python | AWS Glue | Lambda | Serverless ETL & Event-Driven Workflows
